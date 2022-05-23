@@ -1,0 +1,125 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 3%;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.brand-logo-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar {
+  align-self: center;
+  padding: 24px 4%;
+  background-color: white;
+  border-bottom: solid 1px #e8e8e8;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-brand {
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #0290ff;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  list-style-type: none;
+  gap: 1px;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  color: #121212;
+  letter-spacing: 1.9px;
+}
+
+.spacelogo {
+  height: 60px;
+  width: 60px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  padding: 20px 0 20px;
+  vertical-align: middle;
+}
+
+.nav-bar ul li {
+  padding: 0;
+}
+
+.nav-bar ul li:last-child {
+  border-left: 2px solid black;
+}
+
+a {
+  position: relative;
+  display: block;
+  padding: 5px 0;
+  margin: 0 12px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+  color: #0290ff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #0290ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  font-size: 15px;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #0290ff;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+
+a:active::before {
+  background-color: #0290ff;
+}
+
+a:hover::before,
+a:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
