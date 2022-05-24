@@ -1,6 +1,6 @@
 import Dowjones from './images/Dow_Jones_Logo.svg.png';
-import Nasdaq from './images/Nasdaq.png';
-import SP500 from './images/S&P500.png';
+import Nasdaq from './images/nasdaq.png';
+import SP500 from './images/SP500.jpg';
 
 const exchange = [
   {

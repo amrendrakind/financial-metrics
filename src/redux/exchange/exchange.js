@@ -1,5 +1,5 @@
 import exchangelist from './exchangelist';
-import EXCHANGE from '../types';
+import { EXCHANGE } from '../types';
 
 const initialState = [];
 
