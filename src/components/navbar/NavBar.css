@@ -70,7 +70,7 @@ li {
   border-left: 2px solid black;
 }
 
-a {
+.nav-bar a {
   position: relative;
   display: block;
   padding: 5px 0;
@@ -86,21 +86,21 @@ a {
 }
 
 a:hover,
-a:focus,
-a:active {
-  color: #0290ff;
-  font-weight: 600;
+a:active,
+.nav-bar a:focus {
+  color: #242ef6;
+  font-weight: 800;
   text-decoration: none;
 }
 
-a:focus,
-a:active {
+.nav-bar a:focus,
+.nav-bar a:active {
   font-size: 15px;
   font-weight: bold;
   color: #0290ff;
 }
 
-a::before {
+.nav-bar a::before {
   content: "";
   display: block;
   position: absolute;

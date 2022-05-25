@@ -9,19 +9,20 @@ function CompanyItem(props) {
   const { company } = props;
   const { symbol, name } = company;
 
-  //   const exchangeSelected = () => {
-  //     const exchange = symbol;
-  //     dispatch(companyDataFromAPI(exchange));
+  //   const companySelected = () => {
+  //     const company = symbol;
+  //     dispatch(companyDataFromAPI(company));
   //   };
 
   return (
     <li
       key={symbol}
+      className="companyName"
     >
       <Link
         to={`/comapny/${symbol}`}
         className="company-detail-container"
-        // onClick={exchangeSelected}
+        // onClick={companySelected}
       >
         <div className="company-symbol">
           {symbol}

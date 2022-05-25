@@ -6,7 +6,7 @@ function Company() {
   const company = useSelector((state) => state.Company);
 
   return (
-    <ul className="exchange-list-conatiner">
+    <ul className="company-list-conatiner">
       {company.map((company) => (
         <CompanyItem
           key={company.id}
