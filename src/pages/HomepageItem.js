@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function HomepageItem(props) {
   const { exchange } = props;
   const {
-    symbol, name, image, alt,
+    symbol, image, alt,
   } = exchange;
   return (
     <li
@@ -14,7 +14,6 @@ function HomepageItem(props) {
         to={`/comapny/${symbol}`}
         className="exchange-detail-container"
       >
-        <div className="name">{name}</div>
         <div className="imgContainer">
           <img src={image} alt={alt} />
         </div>
