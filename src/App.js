@@ -11,6 +11,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/financial-metrics" exact="true" element={<Homepage />} />
+        <Route path="/comapny/:id" element={<MyProfile />} />
         <Route path="/myprofile" element={<MyProfile />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
