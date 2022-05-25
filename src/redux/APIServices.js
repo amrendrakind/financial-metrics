@@ -4,10 +4,14 @@
 
 // https://financialmodelingprep.com/api/v3/sp500_constituent?apikey=YOUR_API_KEY
 
-const companySymbolAPI = 'https://financialmodelingprep.com/api/v3/dowjones_constituent?apikey=b910dda5a91116817f2abf37854a3177';
+// const companySymbolAPI = 'https://financialmodelingprep.com/api/v3/dowjones_constituent?apikey=b910dda5a91116817f2abf37854a3177';
 
-const getcompanySymbolData = async () => {
-  const response = await fetch(companySymbolAPI, {
+const API = 'https://financialmodelingprep.com/api/v3/';
+const KEY = 'b910dda5a91116817f2abf37854a3177';
+
+const getCompanyData = async (symbol) => {
+  const companyAPI = `${API}${symbol}_constituent?apikey=${KEY}`;
+  const response = await fetch(companyAPI, {
     method: 'GET',
     headers: {
       Accept: 'application/json',
@@ -17,4 +21,4 @@ const getcompanySymbolData = async () => {
   return companySymbolData;
 };
 
-export default { getcompanySymbolData };
+export default { getCompanyData };

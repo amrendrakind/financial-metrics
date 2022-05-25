@@ -4,9 +4,11 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 
 import exchangeReducer from './exchange/exchange';
+import companyReducer from './company/company';
 
 const rootReducers = combineReducers({
   Exchange: exchangeReducer,
+  Company: companyReducer,
 });
 
 const store = createStore(
