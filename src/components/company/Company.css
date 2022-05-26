@@ -51,12 +51,12 @@
 }
 
 .back-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid ;
+  grid-template-columns: 1% 99%;
 }
 
 .backBtn {
   color: #0252ff;
-  font-size: 40px;
+  font-size: 45px;
+  align-self:flex-start;
 }
