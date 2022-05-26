@@ -34,10 +34,12 @@
 .company-detail-container {
   width: 100%;
   height: 30%;
-  color: #eee;
+  color: #0252ff;
+  font-weight: bolder;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
 }
+

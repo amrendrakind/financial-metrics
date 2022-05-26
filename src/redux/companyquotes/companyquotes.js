@@ -3,16 +3,10 @@ import APIServices from '../APIServices';
 
 const initialState = [];
 
-const companyQuotesLists = (company) => {
-  const quoteslist = company.map((company) => ({
-    name: company.name,
-    symbol: company.symbol,
-  }));
-  return {
-    type: COMPANY_QUOTES,
-    payload: quoteslist,
-  };
-};
+const companyQuotesLists = (quoteslist) => ({
+  type: COMPANY_QUOTES,
+  payload: quoteslist,
+});
 
 const companyQuotesFromAPI = (symbol) => async (dispatch) => {
   const response = await APIServices.getCompanyQuotes(symbol);

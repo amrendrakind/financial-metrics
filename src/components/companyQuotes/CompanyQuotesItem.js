@@ -1,29 +1,34 @@
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-// import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 function CompanyQuotesItem(props) {
   const { quotes } = props;
-  const { symbol, name } = quotes;
+
+  const allData = Object.entries(quotes).map((entry) => {
+    const [key, value] = entry;
+    return { key, value };
+  });
 
   return (
-    <li
-      key={symbol}
-      className="companyName"
-    >
-      <Link
-        to={`/quotes/${symbol}`}
-        className="company-detail-container"
-      >
-        <div className="company-symbol">
-          {symbol}
-        </div>
-        <div className="company-name">
-          {name}
-        </div>
 
-      </Link>
-    </li>
+    <div className="detailsContainer">
+      <ul className="dataList">
+        {allData.map((data) => (
+          <li
+            key={uuidv4()}
+            className="financialDetails"
+            // data-aos="fade-right"
+          >
+            <div className="key">
+              {data.key}
+            </div>
+            <div className="value">
+              {data.value}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 export default CompanyQuotesItem;

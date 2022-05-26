@@ -4,7 +4,6 @@ import './CompanyQuotes.css';
 
 function CompanyQuotes() {
   const companyQuote = useSelector((state) => state.CompanyQuotes);
-  // console.log(companyQuote);
   return (
     <ul className="company-list-conatiner">
       {companyQuote.map((quotes) => (

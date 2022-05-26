@@ -27,7 +27,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
-  color: #0290ff;
+  color: #0252ff;
   cursor: pointer;
   padding-left: 10px;
 }
@@ -81,14 +81,14 @@ li {
   font-weight: 900;
   text-transform: uppercase;
   transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
-  color: #0290ff;
+  color: #0252ff;
   text-decoration: none;
 }
 
 a:hover,
 a:active,
 .nav-bar a:focus {
-  color: #242ef6;
+  color: #1621f3;
   font-weight: 800;
   text-decoration: none;
 }
@@ -97,7 +97,7 @@ a:active,
 .nav-bar a:active {
   font-size: 15px;
   font-weight: bold;
-  color: #0290ff;
+  color: #0252ff;
 }
 
 .nav-bar a::before {
@@ -108,14 +108,14 @@ a:active,
   left: 0;
   height: 3px;
   width: 100%;
-  background-color: #0290ff;
+  background-color: #0252ff;
   transform-origin: right top;
   transform: scale(0, 1);
   transition: color 0.1s, transform 0.2s ease-out;
 }
 
 a:active::before {
-  background-color: #0290ff;
+  background-color: #0252ff;
 }
 
 a:hover::before,
