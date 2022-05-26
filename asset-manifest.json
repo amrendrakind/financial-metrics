@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/financial-metrics/static/css/main.f5b34aa5.css",
-    "main.js": "/financial-metrics/static/js/main.471240d6.js",
+    "main.css": "/financial-metrics/static/css/main.2c8c464c.css",
+    "main.js": "/financial-metrics/static/js/main.59193276.js",
     "static/media/Dow_Jones_Logo.svg.png": "/financial-metrics/static/media/Dow_Jones_Logo.svg.ae1d4c64d9077f7b0d5b.png",
     "static/media/nasdaq.png": "/financial-metrics/static/media/nasdaq.d50dfaec4a3580612dc1.png",
     "static/media/logo-finance.png": "/financial-metrics/static/media/logo-finance.49f4968ea7ad33e67884.png",
     "index.html": "/financial-metrics/index.html",
-    "main.f5b34aa5.css.map": "/financial-metrics/static/css/main.f5b34aa5.css.map",
-    "main.471240d6.js.map": "/financial-metrics/static/js/main.471240d6.js.map"
+    "main.2c8c464c.css.map": "/financial-metrics/static/css/main.2c8c464c.css.map",
+    "main.59193276.js.map": "/financial-metrics/static/js/main.59193276.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5b34aa5.css",
-    "static/js/main.471240d6.js"
+    "static/css/main.2c8c464c.css",
+    "static/js/main.59193276.js"
   ]
 }
