@@ -17,7 +17,7 @@ function CompanyQuotesItem(props) {
           <li
             key={uuidv4()}
             className="financialDetails"
-            // data-aos="fade-right"
+
           >
             <div className="key">
               {data.key}

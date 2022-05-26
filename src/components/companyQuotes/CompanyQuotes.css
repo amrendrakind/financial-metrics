@@ -42,10 +42,10 @@
 
 .key {
   width: 60%;
-  border-right: 3px solid #85aaf0;
+  border-right: 2px solid #85aaf0;
 }
 
 .value {
   width: 40%;
-  margin-left: 3px;
+  margin-left: 2px;
 }

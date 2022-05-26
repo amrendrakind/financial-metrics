@@ -14,14 +14,17 @@ const Homepage = () => {
   }, []);
 
   return (
-    <ul className="exchange-list-conatiner">
-      {exchange.map((exchange) => (
-        <HomepageItem
-          key={exchange.symbol}
-          exchange={exchange}
-        />
-      ))}
-    </ul>
+    <div className="container">
+      <ul className="exchange-list-conatiner">
+        <h1 className="homepage-heading">Please Select Exchange</h1>
+        {exchange.map((exchange) => (
+          <HomepageItem
+            key={exchange.symbol}
+            exchange={exchange}
+          />
+        ))}
+      </ul>
+    </div>
   );
 };
 

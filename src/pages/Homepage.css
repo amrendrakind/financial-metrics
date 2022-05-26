@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #7cb37d;
+  background-color: #97d197;
 }
 
 .imgContainer {
@@ -20,4 +20,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.homepage-heading {
+  color: #0252ff;
 }
