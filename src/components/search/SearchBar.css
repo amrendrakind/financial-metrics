@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   background: url(./stocks.jpg);
-  height: 250px;
+  height: 200px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 250px;
+  height: 200px;
   background: rgba(182, 200, 235, 0.6);
   z-index: 1;
 }
