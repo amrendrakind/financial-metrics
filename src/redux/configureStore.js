@@ -5,10 +5,12 @@ import logger from 'redux-logger';
 
 import exchangeReducer from './exchange/exchange';
 import companyReducer from './company/company';
+import companyQuotesReducer from './companyquotes/companyquotes';
 
 const rootReducers = combineReducers({
   Exchange: exchangeReducer,
   Company: companyReducer,
+  CompanyQuotes: companyQuotesReducer,
 });
 
 const store = createStore(

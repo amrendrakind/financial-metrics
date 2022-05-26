@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage';
 import MyProfile from './pages/MyProfile';
 import NavBar from './components/navbar/NavBar';
 import Company from './components/company/Company';
+import CompanyQuotes from './components/companyQuotes/CompanyQuotes';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/financial-metrics" exact="true" element={<Homepage />} />
-        <Route path="/comapny/:id" element={<Company />} />
+        <Route path="/company/:id" element={<Company />} />
+        <Route path="/quotes/:id" element={<CompanyQuotes />} />
         <Route path="/myprofile" element={<MyProfile />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

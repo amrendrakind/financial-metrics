@@ -10,7 +10,6 @@ function HomepageItem(props) {
   const {
     symbol, image, alt,
   } = exchange;
-
   const exchangeSelected = () => {
     const exchange = symbol;
     dispatch(companyDataFromAPI(exchange));
@@ -21,7 +20,7 @@ function HomepageItem(props) {
       key={symbol}
     >
       <Link
-        to={`/comapny/${symbol}`}
+        to={`/company/${symbol}`}
         className="exchange-detail-container"
         onClick={exchangeSelected}
       >

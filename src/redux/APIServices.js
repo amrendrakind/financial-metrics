@@ -6,7 +6,12 @@
 
 // const companySymbolAPI = 'https://financialmodelingprep.com/api/v3/dowjones_constituent?apikey=b910dda5a91116817f2abf37854a3177';
 
+// https://financialmodelingprep.com/api/v3/quote/AAPL?apikey=YOUR_API_KEY
+
 const API = 'https://financialmodelingprep.com/api/v3/';
+
+const APIQUOTES = 'https://financialmodelingprep.com/api/v3/quote/';
+
 const KEY = 'b910dda5a91116817f2abf37854a3177';
 
 const getCompanyData = async (symbol) => {
@@ -21,4 +26,16 @@ const getCompanyData = async (symbol) => {
   return companySymbolData;
 };
 
-export default { getCompanyData };
+const getCompanyQuotes = async (symbol) => {
+  const companyQuotesAPI = `${APIQUOTES}${symbol}?apikey=${KEY}`;
+  const response = await fetch(companyQuotesAPI, {
+    method: 'GET',
+    headers: {
+      Accept: 'application/json',
+    },
+  });
+  const companySymbolData = await response.json();
+  return companySymbolData;
+};
+
+export default { getCompanyData, getCompanyQuotes };

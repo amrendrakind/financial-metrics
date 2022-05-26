@@ -1,18 +1,10 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { companyQuotesFromAPI } from '../../redux/companyquotes/companyquotes';
+// import { v4 as uuidv4 } from 'uuid';
 
-function CompanyItem(props) {
-  const dispatch = useDispatch();
-
-  const { company } = props;
-  const { symbol, name } = company;
-
-  const companySelected = () => {
-    const company = symbol;
-    dispatch(companyQuotesFromAPI(company));
-  };
+function CompanyQuotesItem(props) {
+  const { quotes } = props;
+  const { symbol, name } = quotes;
 
   return (
     <li
@@ -22,7 +14,6 @@ function CompanyItem(props) {
       <Link
         to={`/quotes/${symbol}`}
         className="company-detail-container"
-        onClick={companySelected}
       >
         <div className="company-symbol">
           {symbol}
@@ -35,10 +26,10 @@ function CompanyItem(props) {
     </li>
   );
 }
-export default CompanyItem;
+export default CompanyQuotesItem;
 
-CompanyItem.propTypes = {
-  company:
+CompanyQuotesItem.propTypes = {
+  quotes:
           PropTypes.objectOf(
             {
               name: PropTypes.string.isRequired,
