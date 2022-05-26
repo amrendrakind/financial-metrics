@@ -51,12 +51,12 @@
 }
 
 .back-header {
-  display: grid ;
+  display: grid;
   grid-template-columns: 5% 90%;
 }
 
 .backBtn {
   color: #0252ff;
   font-size: 45px;
-  align-self:flex-start;
+  align-self: flex-start;
 }
