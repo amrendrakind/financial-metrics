@@ -10,14 +10,16 @@ import CompanyQuotes from './components/companyQuotes/CompanyQuotes';
 function App() {
   return (
     <>
-      <NavBar />
-      <Routes>
-        <Route path="/financial-metrics" exact="true" element={<Homepage />} />
-        <Route path="/company/:id" element={<Company />} />
-        <Route path="/quotes/:id" element={<CompanyQuotes />} />
-        <Route path="/myprofile" element={<MyProfile />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div className="screen-area">
+        <NavBar />
+        <Routes>
+          <Route path="/financial-metrics" exact="true" element={<Homepage />} />
+          <Route path="/company/:id" element={<Company />} />
+          <Route path="/quotes/:id" element={<CompanyQuotes />} />
+          <Route path="/myprofile" element={<MyProfile />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </>
   );
 }

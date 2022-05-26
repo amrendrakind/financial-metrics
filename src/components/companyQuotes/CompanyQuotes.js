@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { BiChevronLeft } from 'react-icons/bi';
 import CompanyQuotesItem from './CompanyQuotesItem';
@@ -6,8 +6,14 @@ import CompanyQuotesItem from './CompanyQuotesItem';
 import './CompanyQuotes.css';
 
 function CompanyQuotes() {
+  const { id } = useParams();
   const companyQuote = useSelector((state) => state.CompanyQuotes);
-  const { name, symbol, exchange } = companyQuote[0];
+  const { exchange } = companyQuote[0];
+
+  const CompanyData = useSelector((state) => state.Company);
+  const companyInfo = CompanyData.filter((company) => company.symbol === id);
+  const { name, symbol } = companyInfo[0];
+
   return (
     <>
       <div className="back-header">
