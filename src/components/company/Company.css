@@ -53,6 +53,10 @@
 .back-header {
   display: grid;
   grid-template-columns: 5% 90%;
+  border: 1px solid #0252ff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .backBtn {

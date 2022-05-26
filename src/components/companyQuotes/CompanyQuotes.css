@@ -19,15 +19,15 @@
   display: flex;
   padding: 0 10px;
   margin-bottom: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .financialDetails:nth-child(2n + 1) {
-  background-color: #94c5a1;
+  background-color: #43b06b;
 }
 
 .financialDetails:nth-child(2n + 2) {
-  background-color: #43b06b;
+  background-color: #94c5a1;
 }
 
 .key,

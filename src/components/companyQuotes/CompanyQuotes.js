@@ -7,8 +7,11 @@ import './CompanyQuotes.css';
 
 function CompanyQuotes() {
   const { id } = useParams();
+  let exchange = '';
   const companyQuote = useSelector((state) => state.CompanyQuotes);
-  const { exchange } = companyQuote[0];
+  if (companyQuote.length) {
+    exchange = companyQuote[0].exchange;
+  } else { exchange = 'DOWJONES'; }
 
   const CompanyData = useSelector((state) => state.Company);
   const companyInfo = CompanyData.filter((company) => company.symbol === id);
