@@ -17,7 +17,7 @@ const Homepage = () => {
     <ul className="exchange-list-conatiner">
       {exchange.map((exchange) => (
         <HomepageItem
-          key={exchange.id}
+          key={exchange.symbol}
           exchange={exchange}
         />
       ))}
