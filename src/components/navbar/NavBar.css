@@ -1,3 +1,13 @@
+@media only screen and (min-width: 950px) {
+  .nav-bar {
+    display: block;
+  }
+
+  .mobile-section {
+    display: none;
+  }
+}
+
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -122,4 +132,46 @@ a:hover::before,
 a:focus::before {
   transform-origin: left top;
   transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 950px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .mobile-section {
+    display: block;
+  }
+
+  .mobile-header {
+    background-color: #0252ff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+  }
+
+  .mobile-homeIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 90%;
+    width: 34px;
+    margin: 2px 0 0 2px;
+    background-color: #0252ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .mobile-home {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .titleHeader {
+    text-align: center;
+    color: #fff;
+  }
 }
