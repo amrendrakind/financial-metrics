@@ -42,3 +42,10 @@
   align-items: center;
   text-decoration: none;
 }
+
+.comapny-head-info {
+  text-align: center;
+  user-select: none;
+  margin: 5px;
+  color: #0252ff;
+}

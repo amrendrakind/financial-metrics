@@ -33,6 +33,7 @@ function Company() {
         clearInput={clearInput}
         id={id}
       />
+      <h2 className="comapny-head-info">Click a company name to watch the stock price quotes!!</h2>
       <ul className="company-list-conatiner">
         {company.filter((value) => {
           let result = '';
