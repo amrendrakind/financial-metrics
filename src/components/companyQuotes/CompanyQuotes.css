@@ -49,3 +49,22 @@
   width: 40%;
   margin-left: 2px;
 }
+
+.comapny-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #0252ff;
+}
+
+.back-header a {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.comapny-info .comapny-symbol {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+}

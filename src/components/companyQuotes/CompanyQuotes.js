@@ -7,12 +7,19 @@ import './CompanyQuotes.css';
 
 function CompanyQuotes() {
   const companyQuote = useSelector((state) => state.CompanyQuotes);
-  const exchangeName = companyQuote[0].exchange;
+  const { name, symbol, exchange } = companyQuote[0];
   return (
     <>
-      <Link to={`/company/${exchangeName}`}>
-        <BiChevronLeft className="backBtn" />
-      </Link>
+      <div className="back-header">
+        <Link to={`/company/${exchange}`}>
+          <BiChevronLeft className="backBtn" />
+        </Link>
+        <div className="comapny-info">
+          <h2 className="comapny-symbol">{symbol}</h2>
+          <h2 className="comapny-name">{name}</h2>
+        </div>
+      </div>
+
       <ul className="company-list-conatiner">
         {companyQuote.map((quotes) => (
           <CompanyQuotesItem
