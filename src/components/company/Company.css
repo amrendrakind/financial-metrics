@@ -49,3 +49,14 @@
   margin: 5px;
   color: #0252ff;
 }
+
+.back-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.backBtn {
+  color: #0252ff;
+  font-size: 40px;
+}

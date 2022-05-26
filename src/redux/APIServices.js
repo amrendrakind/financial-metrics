@@ -19,7 +19,7 @@ const getCompanyData = async (symbol) => {
   return companySymbolData;
 };
 
-const getCompanyQuotes = async (symbol) => {
+const getCompanyQuotes = async (exchangeName, symbol) => {
   const companyQuotesAPI = `${APIQUOTES}${symbol}?apikey=${KEY}`;
   const response = await fetch(companyQuotesAPI, {
     method: 'GET',
@@ -28,7 +28,9 @@ const getCompanyQuotes = async (symbol) => {
     },
   });
   const companySymbolData = await response.json();
-  return companySymbolData;
+  const exchange = exchangeName.toUpperCase();
+  const companyDataWithExchange = companySymbolData.map((item) => ({ ...item, exchange }));
+  return companyDataWithExchange;
 };
 
 export default { getCompanyData, getCompanyQuotes };

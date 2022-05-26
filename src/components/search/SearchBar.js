@@ -6,10 +6,10 @@ import './SearchBar.css';
 
 const SearchBar = (props) => {
   const {
-    inputData, getData, searchComp, clearInput, id,
+    inputData, getData, searchComp, clearInput, exchange,
   } = props;
 
-  const exchangeName = id.toUpperCase();
+  const exchangeName = exchange.toUpperCase();
   return (
     <div className="top">
       <h2 className="title">
@@ -47,7 +47,7 @@ SearchBar.propTypes = {
   getData: PropTypes.func.isRequired,
   searchComp: PropTypes.string.isRequired,
   clearInput: PropTypes.func.isRequired,
-  id: PropTypes.string.isRequired,
+  exchange: PropTypes.string.isRequired,
 };
 
 export default SearchBar;

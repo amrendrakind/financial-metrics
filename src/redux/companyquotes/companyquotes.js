@@ -8,8 +8,8 @@ const companyQuotesLists = (quoteslist) => ({
   payload: quoteslist,
 });
 
-const companyQuotesFromAPI = (symbol) => async (dispatch) => {
-  const response = await APIServices.getCompanyQuotes(symbol);
+const companyQuotesFromAPI = (exchange, symbol) => async (dispatch) => {
+  const response = await APIServices.getCompanyQuotes(exchange, symbol);
   dispatch(companyQuotesLists(response));
 };
 

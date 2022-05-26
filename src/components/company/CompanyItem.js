@@ -6,12 +6,10 @@ import { companyQuotesFromAPI } from '../../redux/companyquotes/companyquotes';
 function CompanyItem(props) {
   const dispatch = useDispatch();
 
-  const { company } = props;
+  const { company, exchange } = props;
   const { symbol, name } = company;
-
   const companySelected = () => {
-    const company = symbol;
-    dispatch(companyQuotesFromAPI(company));
+    dispatch(companyQuotesFromAPI(exchange, symbol));
   };
 
   return (
@@ -45,4 +43,5 @@ CompanyItem.propTypes = {
               symbol: PropTypes.string.isRequired,
             },
           ).isRequired,
+  exchange: PropTypes.string.isRequired,
 };

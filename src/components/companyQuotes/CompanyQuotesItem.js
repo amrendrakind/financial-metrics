@@ -37,8 +37,8 @@ CompanyQuotesItem.propTypes = {
   quotes:
           PropTypes.objectOf(
             {
-              name: PropTypes.string.isRequired,
-              symbol: PropTypes.string.isRequired,
+              name: PropTypes.string,
+              symbol: PropTypes.string,
             },
           ).isRequired,
 };
