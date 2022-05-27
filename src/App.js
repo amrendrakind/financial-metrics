@@ -1,28 +1,26 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import NotFound from './pages/NotFound';
+import Homepage from './pages/Homepage';
+import MyProfile from './pages/MyProfile';
+import NavBar from './components/navbar/NavBar';
+import Company from './components/company/Company';
+import CompanyQuotes from './components/companyQuotes/CompanyQuotes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="screen-area">
+        <NavBar />
+        <Routes>
+          <Route path="/financial-metrics" exact="true" element={<Homepage />} />
+          <Route path="/company/:id" element={<Company />} />
+          <Route path="/quotes/:id" element={<CompanyQuotes />} />
+          <Route path="/myprofile" element={<MyProfile />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 

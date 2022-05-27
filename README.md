@@ -103,6 +103,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse team for guidance
+- Based on [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance design.
 
 ## 📝 License
 
