@@ -11,27 +11,21 @@ function CompanyQuotesItem(props) {
 
   return (
     <div className="detailsContainer">
-      { allData.length === 0
-        ? (
-          <h2 className="loading">Loading Price Quotes...</h2>
-        )
-        : (
-          <ul className="dataList">
-            {allData.map((data) => (
-              <li
-                key={uuidv4()}
-                className="financialDetails"
-              >
-                <div className="key">
-                  {data.key}
-                </div>
-                <div className="value">
-                  {data.value}
-                </div>
-              </li>
-            ))}
-          </ul>
-        )}
+      <ul className="dataList">
+        {allData.map((data) => (
+          <li
+            key={uuidv4()}
+            className="financialDetails"
+          >
+            <div className="key">
+              {data.key}
+            </div>
+            <div className="value">
+              {data.value}
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

@@ -28,15 +28,20 @@ function CompanyQuotes() {
           <h2 className="comapny-name">{name}</h2>
         </div>
       </div>
-
-      <ul className="company-list-conatiner">
-        {companyQuote.map((quotes) => (
-          <CompanyQuotesItem
-            key={quotes.symbol}
-            quotes={quotes}
-          />
-        ))}
-      </ul>
+      { companyQuote.length === 0
+        ? (
+          <h2 className="loading">Loading Price Quotes...</h2>
+        )
+        : (
+          <ul className="company-list-conatiner">
+            {companyQuote.map((quotes) => (
+              <CompanyQuotesItem
+                key={quotes.symbol}
+                quotes={quotes}
+              />
+            ))}
+          </ul>
+        )}
     </>
   );
 }
