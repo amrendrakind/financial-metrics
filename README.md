@@ -2,8 +2,12 @@
 
 # Project Name : Financial Metrics
 
-> The Financial Metrics is about building a mobile web application to check a list of metrics (numeric values) that I will create making use of React and Redux. :
+> The Financial Metrics is about building a mobile web application to check a list of metrics (numeric values) that I create making use of React and Redux. :
 
+- Following end point API link has been used for backend data
+  - https://financialmodelingprep.com/api/v3/dowjones_constituent?apikey=YOUR_API_KEY
+  - https://financialmodelingprep.com/api/v3/nasdaq_constituent?apikey=YOUR_API_KEY
+  - https://financialmodelingprep.com/api/v3/quote/AAPL?apikey=YOUR_API_KEY
 - User can go to Home Page that display financial information from the [Financial Modeling Prep API](https://site.financialmodelingprep.com/developer/docs)
 
 
@@ -22,6 +26,10 @@ You can find live project at https://amrendrakind.github.io/financial-metrics/
 ### Github
 
 Take a look at the financial-metrics page [financial-metrics@GitHub](https://amrendrakind.github.io/financial-metrics)
+
+## Video Presentation:
+
+- [Click here for video](https://www.loom.com/share/5a96fe055fae46daac44dbef8d1d56a9)
 
 ## Development set up
 
