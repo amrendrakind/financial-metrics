@@ -1,0 +1,70 @@
+
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.dataList {
+  list-style: none;
+  border-bottom: none;
+  padding: 0;
+  width: 100%;
+}
+
+.financialDetails {
+  display: flex;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.financialDetails:nth-child(2n + 1) {
+  background-color: #43b06b;
+}
+
+.financialDetails:nth-child(2n + 2) {
+  background-color: #94c5a1;
+}
+
+.key,
+.value {
+  height: 35px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  color: #0252ff;
+  font-weight: 550;
+}
+
+.key {
+  width: 60%;
+  border-right: 2px solid #85aaf0;
+}
+
+.value {
+  width: 40%;
+  margin-left: 2px;
+}
+
+.comapny-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #0252ff;
+}
+
+.back-header a {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.comapny-info .comapny-symbol {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
