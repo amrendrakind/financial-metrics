@@ -29,7 +29,7 @@ Take a look at the financial-metrics page [financial-metrics@GitHub](https://amr
 
 ## Video Presentation:
 
-- [click here]()
+- [Click here for video](https://www.loom.com/share/5a96fe055fae46daac44dbef8d1d56a9)
 
 ## Development set up
 
